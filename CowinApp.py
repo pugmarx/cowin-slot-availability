@@ -94,12 +94,16 @@ try:
                     dataCount += 1
                     
         if(dataCount == 0):
-            print("No slot available.")
+            #print("No slot available.")
+            print("-------------------------------------------")
+            print("----------- No Available Slots ------------")
+            print("-------------------------------------------")
         
         else:
-            print("********************************")
-            print("****** F O U N D ***************")
-            print("********************************")
+            print("*******************************************")
+            print("*************   F O U N D   ***************")
+            print("*******************************************")
+
             if len(email)>0:
                 senders_mail = 'xxxxx@gmail.com'
                 receivers_mail=email

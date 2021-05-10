@@ -1,5 +1,5 @@
 import smtplib
-import winsound
+#import winsound
 import requests
 import time
 import json
@@ -24,7 +24,7 @@ try:
         webDataStates = requests.request("GET", uriStates, headers=browser_header).json()
         dataCount=0
         for i in webDataStates["states"]:
-            if stateName in i["state_name"].title()::
+            if stateName in i["state_name"].title():
                 stateData=i
                 dataCount+=1
         if dataCount==1:
@@ -53,7 +53,7 @@ try:
         webDataDistricts = requests.request("GET", uriDistricts, headers=browser_header).json()
         dataCount=0
         for i in webDataDistricts["districts"]:
-            if districtName in i["district_name"].title()::
+            if districtName in i["district_name"].title():
                 districtData=i
                 dataCount+=1
                         
@@ -98,7 +98,10 @@ try:
             print("No slot available.")
         
         else:
-            winsound.Beep(3000, 500)
+            print("********************************")
+            print("****** F O U N D ***************")
+            print("********************************")
+            #winsound.Beep(3000, 500)
             if len(email)>0:
                 senders_mail = 'xxxxx@gmail.com'
                 receivers_mail=email

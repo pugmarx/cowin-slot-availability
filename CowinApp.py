@@ -1,5 +1,4 @@
 import smtplib
-#import winsound
 import requests
 import time
 import json
@@ -101,7 +100,6 @@ try:
             print("********************************")
             print("****** F O U N D ***************")
             print("********************************")
-            #winsound.Beep(3000, 500)
             if len(email)>0:
                 senders_mail = 'xxxxx@gmail.com'
                 receivers_mail=email
